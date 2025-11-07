@@ -1,0 +1,4 @@
+[core]
+    remote = remotedest
+['remote "remotedest"']
+    url = ../S3
