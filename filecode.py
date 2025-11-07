@@ -9,7 +9,8 @@ data = {'Name': ['Alice', 'Bob', 'Charlie'],
     'City': ['New York', 'Los Angeles', 'Chicago']
     }
 
-df = pd.DataFrame(data)
+# Create DataFrame from the data dictionary for sample data
+df = pd.DataFrame(data)              
 
 # Ensure the "data" directory exists at the root level
 data_dir = 'data'
@@ -18,7 +19,7 @@ os.makedirs(data_dir, exist_ok=True)
 # Define the file path
 file_path = os.path.join(data_dir, 'sample_data.csv')
 
-# Save the DataFrame to a CSV file, including column names
+# Save the DataFrame to a CSV file, including column names, without the index
 df.to_csv(file_path, index=False)
 
 print(f"CSV file saved to {file_path}")
